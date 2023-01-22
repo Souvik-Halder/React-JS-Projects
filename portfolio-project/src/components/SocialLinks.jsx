@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -48,7 +48,7 @@ function SocialLinks() {
 
     {
         links.map(({id,child,href,style,download})=>(
-            <li key={id} className={"flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] bg-gray-500 hover:rounded-md duration-300 " +" "+style} >
+            <li key={id} className={"flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] bg-gray-500 hover:rounded-md duration-300 "+style} >
             <a rel="noreferrer" href={href} className="flex justify-between items-center w-full text-white"
             target="_blank"
             download={download}>
